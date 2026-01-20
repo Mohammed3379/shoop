@@ -1,0 +1,29 @@
+{
+    "name": "myshop/myshop",
+    "description": "MyShop E-commerce Platform",
+    "type": "project",
+    "require": {
+        "php": ">=7.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.6",
+        "giorgiosironi/eris": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "MyShop\\": "app/"
+        },
+        "classmap": [
+            "app/services/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MyShop\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "test-property": "phpunit --testsuite Property"
+    }
+}
